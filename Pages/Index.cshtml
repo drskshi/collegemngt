@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="Login">
+        <form action="/" method="post">
+        <label>Province</label>
+        <select name="states" id="states" onchange="myfunction()">
+            <option value="none" selected disabled>Select One</option>
+            <option value="1">State-1</option>
+            <option value="2">Madesh Pradesh</option>
+            <option value="3">Bagmati Pradesh</option>
+            <option value="4">Gandaki Pradesh </option>
+            <option value="5">Lumbini Pradesh</option>
+            <option value="6">Karnali Pradesh </option>
+            <option value="7">Far Western Province </option>
+        </select>
+        <label for="">District</label>
+        <select name="district" id="district">
+            <option value="none" selected disabled>Select one</option>
+        </select>
+        <label>Locality</label>
+        <select name="locality" id="locality">
+            <option value="none" selected disabled>Select one</option>
+        </select>
+        <label for="">Ward</label>
+        <input type="number" max="29" min="1">
+        </form>
+    </div>
+</div>
